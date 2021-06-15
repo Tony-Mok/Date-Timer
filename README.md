@@ -7,7 +7,7 @@ Version:
 ```Python 3.4 or above```
 
 CI:
-```Travis-CI``` / [Sonar cloud](https://sonarcloud.io/dashboard?id=Tony-Mok_Date-Timer)
+Travis-CI / [Sonar cloud](https://sonarcloud.io/dashboard?id=Tony-Mok_Date-Timer)
 
 ## Assumption
 All inputs are valid,
