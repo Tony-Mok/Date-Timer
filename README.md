@@ -5,9 +5,11 @@
 Due to the privacy issue, the problem statement is not included
 
  # Solution with Python
-Version: ```Python 3.4 or above``
+Version: 
+```Python 3.4 or above``
 
-CI: Travis-CI
+CI: 
+```Travis-CI```
 
 ## Assumption
 All input are valid, i.e. a valid date
