@@ -1,4 +1,4 @@
-from solution import DateString
+from date_string import DateString
 
 class TestDateSring:
     def test_lt(self):
