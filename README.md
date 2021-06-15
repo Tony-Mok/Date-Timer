@@ -13,7 +13,7 @@ Sonarcloud:
 https://sonarcloud.io/dashboard?id=Tony-Mok_Date-Timer
 
 ## Assumption
-All input are valid, 
+All inputs are valid, 
 
 i.e. 
 
