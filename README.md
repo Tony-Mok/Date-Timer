@@ -13,9 +13,13 @@ CI:
 
 ## Assumption
 All input are valid, 
+
 i.e. 
+
 year is an integer
+
 month is an integer in range (1-12)
+
 day is an integer with valid range
 
 ## How to test
