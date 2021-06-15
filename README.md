@@ -26,7 +26,7 @@ public static boolean moreThanAMonthApart(final DateString a, final DateString b
  ```
 
  # Solution with Python
-Version: ```Python 3.9.4```
+Version: ```Python 3.4 or above``
 
 ## Assumption
 All input are valid, i.e. a valid date
