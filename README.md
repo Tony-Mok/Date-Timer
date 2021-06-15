@@ -3,19 +3,19 @@
 Due to the privacy issue, the problem statement is not included
 
  # Solution with Python
-Version: 
+Version:
 ```Python 3.4 or above```
 
-CI: 
+CI:
 ```Travis-CI```
 
 Sonarcloud:
 https://sonarcloud.io/dashboard?id=Tony-Mok_Date-Timer
 
 ## Assumption
-All inputs are valid, 
+All inputs are valid,
 
-i.e. 
+i.e.
 
 ```year``` is an integer
 
@@ -25,4 +25,3 @@ i.e.
 
 ## How to test
 ```pytest test_solution.py```
-
