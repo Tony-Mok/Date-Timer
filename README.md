@@ -12,7 +12,11 @@ CI:
 ```Travis-CI```
 
 ## Assumption
-All input are valid, i.e. a valid date
+All input are valid, 
+i.e. 
+year is an integer
+month is an integer in range (1-12)
+day is an integer with valid range
 
 ## Installing Dependency
 ```pip install requirement```
