@@ -26,26 +26,30 @@ class DateString:
         observation 1: only the edge cases is important, omit year diff >= 2
         observation 2: when the year diff == 1, the only case to be False will be Dec and next Jan
         '''
-        
-        # to make sure the ordering
-        earlier_date, later_date = sorted([date_str1, date_str2])
-        year_diff = later_date.year - earlier_date.year
 
+        # to make sure the ordering
+        if date_str1 < date_str2:
+            earlier_date, later_date = date_str1, date_str2
+        else:
+            earlier_date, later_date = date_str2, date_str1
+
+        # case 1: year different > 1
+        year_diff = later_date.year - earlier_date.year
         if year_diff >= 2:
             return True
+
+        # case 2: year different == 0 or year different == 1
+        # then we can simply convert the extra year to 13 .. 24 (next year Jan - next year Dec)
+        earlier_month = earlier_date.month
+        later_month = 12 * year_diff + later_date.month
+        month_diff = later_month - earlier_month
+
+        if month_diff == 0:
+            # within the same month
+            return False
+        elif month_diff > 1:
+            # difference more than one month
+            return True
         else:
-            # convert the year to month
-            # pad 12 months if the year diff is 1
-            earlier_month = earlier_date.month
-            later_month = 12 * year_diff + later_date.month
-
-            month_diff = later_month - earlier_month
-
-            if month_diff > 1:
-                return True
-            elif month_diff == 0:
-                return False
-            else:
-                # month_diff = 1
-                # we need to check if the day of the later one is greater than the earlier one
-                return later_date.day > earlier_date.day
+            # only one month apart, so need to check the day value for comparison
+            return later_date.day > earlier_date.day
