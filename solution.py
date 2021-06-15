@@ -23,9 +23,11 @@ class DateString:
         regardless of the number of days.  So, Jan 3rd to Feb 3rd is exactly one month.
         Jan 3rd to Feb 4th is more than a month.
 
-        observation 1: only the edge cases is important, obmit year diff >= 2
+        observation 1: only the edge cases is important, omit year diff >= 2
         observation 2: when the year diff == 1, the only case to be False will be Dec and next Jan
         '''
+        
+        # to make sure the ordering
         earlier_date, later_date = sorted([date_str1, date_str2])
         year_diff = later_date.year - earlier_date.year
 
