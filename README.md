@@ -1,5 +1,3 @@
-# OOP Task
-
 ## Problem Description
 
 Due to the privacy issue, the problem statement is not included
