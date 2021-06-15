@@ -70,3 +70,8 @@ class TestDateSring:
         date1 = DateString(2010, 1, 17)
         date2 = DateString(2008, 12, 16)
         assert DateString.more_than_a_month_apart(date1, date2) == True
+
+        # sample new case
+        date1 = DateString(2000, 4, 1)
+        date2 = DateString(2000, 4, 2)
+        assert DateString.more_than_a_month_apart(date1, date2) == False
