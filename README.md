@@ -11,6 +11,9 @@ Version:
 CI: 
 ```Travis-CI```
 
+Sonarcloud:
+https://sonarcloud.io/dashboard?id=Tony-Mok_Date-Timer
+
 ## Assumption
 All input are valid, 
 
