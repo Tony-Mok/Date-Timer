@@ -21,7 +21,7 @@ i.e.
 
 ```month``` is an integer in valid range: [1-12]
 
-```day``` is an integer with valid range
+```day``` is an integer with valid range (and leap year is handled by user input)
 
 ## How to test
 ```pytest test_solution.py```
