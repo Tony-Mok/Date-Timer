@@ -66,11 +66,11 @@ class TestDateSring:
         assert DateString.more_than_a_month_apart(date1, date2) == True
 
         # boundary case (rev)
-        date2 = DateString(2008, 12, 16)
         date1 = DateString(2009, 1, 17)
+        date2 = DateString(2008, 12, 16)
         assert DateString.more_than_a_month_apart(date1, date2) == True
 
         # diff year
-        date2 = DateString(2008, 12, 16)
         date1 = DateString(2010, 1, 17)
+        date2 = DateString(2008, 12, 16)
         assert DateString.more_than_a_month_apart(date1, date2) == True
