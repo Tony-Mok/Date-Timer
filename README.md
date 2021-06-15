@@ -18,7 +18,7 @@ i.e.
 
 ```year``` is an integer
 
-```month``` is an integer in range (1-12)
+```month``` is an integer in valid range: [1-12]
 
 ```day``` is an integer with valid range
 
