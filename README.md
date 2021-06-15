@@ -18,9 +18,6 @@ year is an integer
 month is an integer in range (1-12)
 day is an integer with valid range
 
-## Installing Dependency
-```pip install requirement```
-
 ## How to test
 ```pytest test_solution.py```
 
