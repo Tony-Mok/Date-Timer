@@ -1,3 +1,7 @@
+from typing import TypeVar
+
+Date_Str = TypeVar("DateString")
+
 class DateString:
     ''' A class containing year, month and day of a date
     '''
@@ -6,7 +10,7 @@ class DateString:
         self.month = month
         self.year = year
 
-    def __lt__(self, other) -> bool:
+    def __lt__(self, other: Date_Str) -> bool:
         if self.year != other.year:
             # different year, then compare the year
             return self.year < other.year
@@ -18,7 +22,7 @@ class DateString:
             return self.day < other.day
 
     @staticmethod
-    def more_than_a_month_apart(date_str1, date_str2) -> bool:
+    def more_than_a_month_apart(date_str1: Date_Str, date_str2: Date_Str) -> bool:
         ''' definition: A month is from some day to the same day in the following month,
         regardless of the number of days.  So, Jan 3rd to Feb 3rd is exactly one month.
         Jan 3rd to Feb 4th is more than a month.
