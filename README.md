@@ -16,11 +16,11 @@ All input are valid,
 
 i.e. 
 
-year is an integer
+```year``` is an integer
 
-month is an integer in range (1-12)
+```month``` is an integer in range (1-12)
 
-day is an integer with valid range
+```day``` is an integer with valid range
 
 ## How to test
 ```pytest test_solution.py```
