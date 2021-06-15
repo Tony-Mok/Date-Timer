@@ -1,4 +1,6 @@
 class DateString:
+    ''' A class containing year, month and day of a date
+    '''
     def __init__(self, year: int, month: int, day: int) -> None:
         self.day = day
         self.month = month
@@ -17,14 +19,13 @@ class DateString:
 
     @staticmethod
     def more_than_a_month_apart(date_str1, date_str2):
-        """
-        definition: A month is from some day to the same day in the following month,
+        ''' definition: A month is from some day to the same day in the following month,
         regardless of the number of days.  So, Jan 3rd to Feb 3rd is exactly one month.
         Jan 3rd to Feb 4th is more than a month.
 
         observation 1: only the edge cases is important, obmit year diff >= 2
         observation 2: when the year diff == 1, the only case to be False will be Dec and next Jan
-        """
+        '''
         earlier_date, later_date = sorted([date_str1, date_str2])
         year_diff = later_date.year - earlier_date.year
 
