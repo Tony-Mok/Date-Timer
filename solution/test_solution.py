@@ -2,6 +2,7 @@ from solution import DateString
 
 class TestDateSring:
     def test_lt(self):
+        '''Testing the __lt__ comparator for sorting'''
         # all same
         date1 = DateString(2008, 10, 15)
         date2 = DateString(2008, 10, 15)
@@ -33,6 +34,7 @@ class TestDateSring:
         assert date2 > date1
 
     def test_more_than_a_month_apart(self):
+        '''Testing the main function'''
         # same day
         date1 = DateString(2008, 10, 15)
         date2 = DateString(2008, 10, 15)
