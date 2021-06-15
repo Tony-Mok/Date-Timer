@@ -24,8 +24,3 @@ public static boolean moreThanAMonthApart(final DateString a, final DateString b
  
 }
  ```
-
-## Spec
-Language: ```Python```
-
-Version: ```3.9.4```
