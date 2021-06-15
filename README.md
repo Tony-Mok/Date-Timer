@@ -25,4 +25,3 @@ i.e.
 
 ## How to test
 ```pytest test_solution.py```
-
