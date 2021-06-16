@@ -21,4 +21,4 @@ i.e.
 ```day``` is an integer with valid range (and leap year is handled by user input)
 
 ## How to test
-```pytest test_solution.py```
+```pytest test_date_string.py```
